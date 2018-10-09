@@ -1,24 +1,23 @@
-public class Teachers extends Person
-{
-  private string subject;
-  private string title;
-  
-  public Teacher(String subject, String title, String firstName, String familyName)
-    {
-        super(firstName, familyName);
+package JamesKo_SabrinaLi_EugeneK;
+
+public class Teacher extends Person {
+
+    private String subject;
+    private String title;
+
+    private String teacherFirst = firstNames[(int)((Math.random() * (firstNames.length)))];
+    private String teacherLast = firstNames[(int)((Math.random() * (familyNames.length)))];
+
+    public Teacher(String subject, String title, String teacherFirst, String teacherLast) {
+        super(teacherFirst,teacherLast);
         this.subject = subject;
         this.title = title;
+
     }
 
-    public String getSubject()
-    {
+    public String getSubject() {
         return subject;
     }
 
-    public String toString()
-    {
-        return title + ". " + getFamilyName();
-    }
 
 }
-    
