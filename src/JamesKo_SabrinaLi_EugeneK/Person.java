@@ -2,6 +2,8 @@ package JamesKo_SabrinaLi_EugeneK;
 
 public class Person {
     private String firstName, familyName;
+    public String[] firstNames = {"Bob","Ernesto","Henry","Ben","Jennifer","Amy","Caroline","Justin","Greg","Nathan","Ivan"};
+    public String[] familyNames = {"Wolf","Edwards","Gibbs","White","Brown","Li","Hughes","Brady","Rodriguez","Turner","Owen"};
 
     public Person(String firstName, String familyName) {
         this.firstName = firstName;
@@ -11,7 +13,7 @@ public class Person {
     public String getFirstName() {
         return firstName;
     }
-
+-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
