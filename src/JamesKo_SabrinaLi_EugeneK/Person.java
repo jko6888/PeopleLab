@@ -1,34 +1,32 @@
 package JamesKo_SabrinaLi_EugeneK;
 
 public class Person {
-    private String firstName, familyName;
-    public String[] firstNames = {"Bob","Ernesto","Henry","Ben","Jennifer","Amy","Caroline","Justin","Greg","Nathan","Ivan"};
-    public String[] familyNames = {"Wolf","Edwards","Gibbs","White","Brown","Li","Hughes","Brady","Rodriguez","Turner","Owen"};
+    private String firstNames, familyNames;
 
-    public Person(String firstName, String familyName) {
-        this.firstName = firstName;
-        this.familyName = familyName;
+    public Person(String firstNames, String familyName) {
+        this.firstNames = firstNames;
+        this.familyNames = familyName;
     }
 
     public String getFirstName() {
-        return firstName;
+        return firstNames;
     }
--
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+
+    public void setFirstNames(String firstNames) {
+        this.firstNames = firstNames;
     }
 
     public String getFamilyName() {
-        return familyName;
+        return familyNames;
     }
 
-    public void setFamilyName(String familyName) {
-        this.familyName = familyName;
+    public void setFamilyNames(String familyNames) {
+        this.familyNames = familyNames;
     }
 
     public boolean equals(Person person) {
-        if (this.firstName.equals(person.getFirstName()) &&
-                this.familyName.equals(person.getFamilyName())) {
+        if (this.firstNames.equals(person.getFirstName()) &&
+                this.familyNames.equals(person.getFamilyName())) {
             return true;
         } else return false;
     }
